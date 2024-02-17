@@ -43,7 +43,7 @@
       let timeLeft = timer;
 
       function updateTimer() {
-          timeLeft -= 100; // decrease the time left by 100 each second
+          timeLeft -= 1; // decrease the time left by 100 each second
           document.getElementById("time-left").innerHTML = timeLeft + " seconds left";
           if (timeLeft <= 0) {
               window.location.href = "https://www.example.com"; // go to a new page after the timer has expired
