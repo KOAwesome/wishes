@@ -9,6 +9,7 @@
   <body>
     <div class="container">
       <h1>Delayed Valentine's Wishes for You</h1>
+      <p id="time-left">120 seconds left</p>
       <div class="wishes">
         <div class="wish fade-in">
           <h2><span class="heart"></span> Wish #1</h2>
@@ -36,6 +37,24 @@
     <div class = "hidden">
       <p>there is something hidden here that is <p hidden>I love you </p></p>
     </div>
+
+    <script>
+      const timer = 120; // set the timer to 2 minutes (120 seconds)
+      let timeLeft = timer;
+
+      function updateTimer() {
+          timeLeft -= 100; // decrease the time left by 100 each second
+          document.getElementById("time-left").innerHTML = timeLeft + " seconds left";
+          if (timeLeft <= 0) {
+              window.location.href = "https://www.example.com"; // go to a new page after the timer has expired
+          }
+      }
+
+      setInterval(updateTimer, 1000); // call the updateTimer function every second
+  </script>
+
+
+
     <script src="script.js"></script>
   </body>
 </html>
