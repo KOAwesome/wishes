@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #e62b2b;
+    font-size: 3rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, #e62b2b, #ff5c5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Container Styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Wish Styles */
+  .wish {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .wish h2 {
+    font-size: 2rem;
+    color: #e62b2b;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wish h2:before {
+    content: "\2764";
+    margin-right: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .wish p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    flex: 1;
+    margin-left: 1rem;
+  }
+  
+  /* Animation Styles */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
